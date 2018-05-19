@@ -1,0 +1,17 @@
+# Site Config
+
+name: xelA
+title: xelA
+
+themecolour: "#2196F3"
+
+domain: "https://xela.alexflipnote.xyz"
+baseurl: ""
+url: "https://xela.alexflipnote.xyz"
+encoding: utf-8
+
+include: ['_pages']
+
+sass:
+  sass_dir: _sass
+  style: compressed
