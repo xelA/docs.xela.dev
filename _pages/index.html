@@ -7,6 +7,10 @@ description: A powerful bot for your discord server
 keywords: xelA, bot, discord, 24/7, hot
 favicon: assets/images/profile.png
 ---
+<style>
+body { background: #252525; }
+</style>
+
 <section class="fullscreen">
   <div class="background" style="background-image: url('assets/images/background.gif');"></div>
   <div class="center-object">
@@ -22,7 +26,28 @@ favicon: assets/images/profile.png
       <a href="https://github.com/xelA/discord_bot.py" class="btn animation highlight" target="_blank">GitHub Source</a>
     </div>
   </div>
+  <div class="arrow bounce"></div>
 </section>
+
+<!-- Modal popout screen -->
+<div id="modal" class="modal modal--close">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>To invite <b>xelA</b> to your server, you will need a server which meets some of the requirements:</p>
+    <ul style="margin-left: 1em;">
+      <li>Active server</li>
+      <li>Non-abusive members (aka. people who will spam bots)</li>
+      <li>Over 1000 members (doesn't count bots)</li>
+      <li>Server with intention of growing</li>
+    </ul>
+    <br>
+    <span>
+      If you want to take further contact, visit my Discord server by clicking the <b>Discord</b> button
+      under this popout, then talk to me at <b>AlexFlipnote#0001</b><br>
+      Also remember, the settings are in JSON format, so I hope you have some experience with it.
+    </span>
+  </div>
+</div>
 
 <section class="container" id="information">
   <h1 class="center"><i class="twa twa-spiral-notepad"></i> Testimonials:</h1>
@@ -32,7 +57,7 @@ favicon: assets/images/profile.png
       <div class="avatar"><img draggable="false" src="{{ site.url }}/assets/images/testimonials/{{ member.avatar }}"></div>
       <h1 class="title">{{ member.name }}</h1>
       {% if member.url %}
-      <a href="{{ member.url }}" target="_blank"><p class="description">{{ member.title }}</p></a>
+      <a href="{{ member.url }}" target="_blank"><p class="description link">{{ member.title }}</p></a>
       {% else %}
       <p class="description">{{ member.title }}</p>
       {% endif %}
