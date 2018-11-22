@@ -1,0 +1,31 @@
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <div class="box-container alizarin-flat message">
+      <p class="center-text">This website is still under progress</p>
+    </div>
+    <br>
+    <div class="markdown-container">
+      {{ content }}
+    </div>
+    <style>
+      .sun-flower-text a { color: #f1c40f; }
+      .message {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+    </style>
+    <script>
+      var headings = document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]");
+      for (var i = 0; i < headings.length; i++) {
+        headings[i].innerHTML =
+          '<a href="#' + headings[i].id + '">'
+            + headings[i].innerText +
+          '</a>';
+      }
+    </script>
+  </body>
+</html>

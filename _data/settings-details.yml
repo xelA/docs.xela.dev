@@ -1,0 +1,39 @@
+- name: CHANNEL_ID
+  value: int
+  desc: The ID to a channel
+
+- name: ROLE_ID
+  value: int
+  desc: The ID to a role
+
+- name: true | false
+  value: bool
+  desc: True means yes, False means no
+
+- name: '"TEXT"'
+  value: string
+  desc: Anything can be put inside a string
+
+- name: DAYS_IN_NUMBER
+  value: int
+  desc: "Example: 2 = two days"
+
+- name: WARNINGS_BEFORE_X
+  value: int
+  desc: Amount of warnings before X action
+
+- name: ROLES_AMOUNT_TO_IGNORE
+  value: int
+  desc: Ignore users who have X amount of roles
+
+- name: CHARACTER_LENGTH_BEFORE_DETECT
+  value: int
+  desc: Ignore message until X characters are in a message
+
+- name: AMOUNT_OF_LINES_BEFORE_DELETE
+  value: int
+  desc: The amount of new lines before it will delete as spam
+
+- name: MENTION_LIMIT
+  value: int
+  desc: The amount of roles until the bot will detect it as spam

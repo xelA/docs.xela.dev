@@ -1,0 +1,18 @@
+<table>
+  <thread>
+    <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thread>
+  <tbody>
+  {% for setting in site.data.settings-details %}
+    <tr>
+      <td class="center-text">{{ setting.name }}</td>
+      <td class="center-text">{{ setting.value }}</td>
+      <td>{{ setting.desc }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
