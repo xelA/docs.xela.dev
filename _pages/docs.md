@@ -77,3 +77,49 @@ Have the ability for users to report anything in the server and let the moderato
 ```json
 "report": CHANNEL_ID
 ```
+
+{% include settings-title.html text="nsfw" noimage=true%}
+Let users choose if they want to see NSFW channels or not with a role you've set up.
+```json
+"nsfw": ROLE_ID
+```
+
+{% include settings-title.html text="saveroles"%}
+Keep a track on what roles a user had before they leave to then recover when they join back again.
+```json
+"saveroles": true|false
+```
+
+{% include settings-title.html text="auto_dehoist"%}
+Automatically dehoists people who are trying to be on top of the member list.
+```json
+"auto_dehoist": true|false
+```
+
+{% include settings-title.html text="auto_decancer"%}
+Automatically decancer people who have a horrible or unreadable names, keep in mind that it's triggered with emojis too.
+```json
+"auto_decancer": true|false
+```
+
+{% include settings-title.html text="ignore_channels" noimage=true%}
+Makes xelA ignore all commands in one channel.
+However, people with ban permissions bypass this rule and can continue to use commands in ignored channel.
+```json
+"ignore_channels": [CHANNEL_ID, CHANNEL_ID, ...]
+```
+
+{% include settings-title.html text="toggleroles"%}
+Gives people the ability to give themselves a role, a perfect solution for users who've read the rules and accept by giving themselves a role to view all channels. The roleme command is toggable, so you can use this as well for people who want to subscribe to announcements/events and then letting them unsubscribe later in time.
+```json
+"toggleroles": [ROLE_ID, ROLE_ID, ...]
+```
+
+{% include settings-title.html text="music" noimage=true%}
+xelA is able to play music, as well as let you control the default settings it will use. The `volume` is with only numbers but any number is the %, so say if you put 75, then the bot will always start with 75% volume. Max volume you can go for is 150%, trying above will prompt that it changed to it, but won't go above it. The `foceskip_roles` is for you to let people inside specific role(s) to forcefully skip any song in the queue. This can be a DJ or whatever you desire.
+```json
+"music": {
+  "volume": 100,
+  "forceskip_roles": [ROLE_ID, ROLE_ID, ...]
+}
+```

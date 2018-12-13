@@ -1,4 +1,7 @@
 <h1 class="sun-flower-text" id="{{ include.text }}">{{ include.text }}</h1>
+{% if include.noimage %}
+{% else %}
 <p>
   <img src="{{ site.url }}/assets/images/docs/{{ include.text }}.png">
 </p>
+{% endif %}
