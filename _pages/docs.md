@@ -166,6 +166,16 @@ This will prevent people from posting **discord.gg** links in your discord serve
 }
 ```
 
+{% include settings-title.html text="antispam" %}
+Whenever people spam your server, xelA will delete the attempted spam and mute the person who does it multiple times. You can manage it by setting who the bot will ignore with specific roles or a channel that is meant for spamming (for odd reasons I guess).
+```json
+"antispam": {
+  "ignore_roles": [ROLE_ID, ROLE_ID, ...],
+  "ignore_channels": [CHANNEL_ID, CHANNEL_ID, ...],
+  "warning": WARNINGS_BEFORE_MUTE
+}
+```
+
 {% include settings-title.html text="anticaps" %}
 Anitcaps is a way for you to avoid people spamming **THINGS WITH EVERYTHING IN LOVELY CAPSLOCK**. You can set an announce channel where it posts what a user said and then the length of when it should start looking at messages, in case people type things like: LOL, WTF, LMAO, GTFO, etc. Percent is to define how much of the message needs to be in CAPS before it deletes, it's defined by the % amount (Example: 50%) divided by 100, that would make it 0.5 to define in the percent option.
 ```json
