@@ -238,6 +238,7 @@ This will ensure that the chat stays friendly without swearing and everything. I
 "family_friendly": {
   "ignore_roles": [ROLE_ID, ROLE_ID, ...],
   "ignore_channels": [CHANNEL_ID, CHANNEL_ID, ...],
+  "only_detect": ["TOXICITY", "SPAM", "IDENTITY_ATTACK", "INSULT", "PROFANITY", "THREAT", "SEXUALLY_EXPLICIT"],
   "warning": WARNINGS_BEFORE_MUTE
 }
 ```
