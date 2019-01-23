@@ -154,7 +154,7 @@ Strict mode can be useful if you want to prevent people from making alts during 
 ```
 
 {% include settings-title.html text="antiads" %}
-This will prevent people from posting **discord.gg** links in your discord server. You can make it ignore channels like self promotions if that's something you got or roles like your staff members. Announce is to showcase in a secret channel what the person who advertised 100% said in case if it was done by mistake or not. `usernamejoin` means if a user joins with discord.gg in their name, the bot will automatically ban them for trying to advertise with their names. If you have welcome/farwell message, it will replace the link with something else to prevent ads.
+This will prevent people from posting **discord.gg** links in your discord server. You can make it ignore channels like self promotions if that's something you got or roles like your staff members. Announce is to showcase in a secret channel what the person who advertised 100% said in case if it was done by mistake or not. `usernamejoin` means if a user joins with discord.gg in their name, the bot will automatically ban them for trying to advertise with their names. If you have welcome/farewell message, it will replace the link with something else to prevent ads.
 ```json
 "antiads": {
   "announce": CHANNEL_ID,
@@ -232,10 +232,20 @@ This setting makes it so you can ban some words or links that you do not allow a
 }
 ```
 
+{% include settings-title.html text="family_friendly" %}
+This will ensure that the chat stays friendly without swearing and everything. If you want to test the filter, try with the `/predict` command.
+```json
+"family_friendly": {
+  "ignore_roles": [ROLE_ID, ROLE_ID, ...],
+  "ignore_channels": [CHANNEL_ID, CHANNEL_ID, ...],
+  "warning": WARNINGS_BEFORE_MUTE
+}
+```
+
 {% include settings-title.html text="welcome" %}
 Give someone a warm welcome when they join your server and give them a nice role if you really feel like you want to colour them to something else than the default, white colour. You can define which role a user and a bot gets if you plan to have that.
 
-{% include welcomefarwell.md %}
+{% include welcomefarewell.md %}
 
 ```json
 "welcome": {
@@ -246,10 +256,10 @@ Give someone a warm welcome when they join your server and give them a nice role
 }
 ```
 
-{% include settings-title.html text="farwell" %}
+{% include settings-title.html text="farewell" %}
 This will tell in the channel you want when someone leaves the server. Kinda sad but not everyone stays forever you know.
 
-{% include welcomefarwell.md %}
+{% include welcomefarewell.md %}
 ```json
 "farewell": {
   "channel": CHANNEL_ID,
@@ -260,7 +270,7 @@ This will tell in the channel you want when someone leaves the server. Kinda sad
 {% include settings-title.html text="banmessage" %}
 Do you want to announce when people get banned in the public with a funny message? Now you can with this setting, define which channel it will post it on and what message it shall send.
 
-{% include welcomefarwell.md %}
+{% include welcomefarewell.md %}
 ```json
 "banmessage": {
   "channel": CHANNEL_ID,
