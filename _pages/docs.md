@@ -234,11 +234,13 @@ This setting makes it so you can ban some words or links that you do not allow a
 
 {% include settings-title.html text="family_friendly" %}
 This will ensure that the chat stays friendly without swearing and everything. If you want to test the filter, try with the `/predict` command.
+You can also have the "only_detect" to not detect anything else, to ensure you have only what you need gone from your server detected by the bot, because if you allow profanity but not insult, then you can disable profanity filter, trust me, they are two different things.
 ```json
 "family_friendly": {
   "ignore_roles": [ROLE_ID, ROLE_ID, ...],
   "ignore_channels": [CHANNEL_ID, CHANNEL_ID, ...],
   "only_detect": ["TOXICITY", "SPAM", "IDENTITY_ATTACK", "INSULT", "PROFANITY", "THREAT", "SEXUALLY_EXPLICIT"],
+  "announce": CHANNEL_ID,
   "warning": WARNINGS_BEFORE_MUTE
 }
 ```
