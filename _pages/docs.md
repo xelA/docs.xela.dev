@@ -25,11 +25,14 @@ You can add as many as you want inside the `custom` tag with an **Array** list. 
 ```
 
 {% include settings-title.html text="levels" %}
-Have xelA give levels and being able to grant roles on getting a level that you define. This can heavily boost your activity and make it rewarding to chat on your server. By default this setting is turned off to not annoy any of the users xelA is with, but you can simply enable it by adding the settings under here, even make it not announce level ups if that's your thing.
+Have xelA give levels and being able to grant roles on getting a level that you define. This can heavily boost your activity and make it rewarding to chat on your server. By default this setting is turned off to not annoy any of the users xelA is with, but you can simply enable it by adding the settings under here, even make it not announce level ups if that's your thing. You can also have the bot ignore channels like shitposting where people spam or roles for people who are punished, so they can't rank up anymore, up to you what you will do.
 ```json
 "levels": {
   "enabled": true|false,
   "announce": true|false,
+  "announceMessage": "**[USER]** has reached level **[LEVEL]**",
+  "ignore_channels": [CHANNEL_ID, CHANNEL_ID, ...],
+  "ignore_roles": [ROLE_ID, ROLE_ID, ...],
   "rewards": [
     {"level": 5, "role": ROLE_ID},
     {"level": 10, "role": ROLE_ID}
