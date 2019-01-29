@@ -30,7 +30,7 @@ Have xelA give levels and being able to grant roles on getting a level that you 
 "levels": {
   "enabled": true|false,
   "announce": true|false,
-  "announceMessage": "**[USER]** has reached level **[LEVEL]**",
+  "announceMessage": "[USER (or) MENTION] has reached level **[LEVEL]**",
   "ignore_channels": [CHANNEL_ID, CHANNEL_ID, ...],
   "ignore_roles": [ROLE_ID, ROLE_ID, ...],
   "rewards": [
