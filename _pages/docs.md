@@ -250,13 +250,14 @@ This setting makes it so you can ban some words or links that you do not allow a
 ```
 
 {% include settings-title.html text="anti_spoilers" %}
-Tired of people spamming spoilers in your server, get rid of people who spam it with this lovely setting. Never see a spoiler spam ever again.
+Tired of people spamming spoilers in your server, get rid of people who spam it with this lovely setting. Never see a spoiler spam ever again. You can also give 0 warnings for using spoilers if it's just to ensure that people can't use it here, because it might be an unfair warning to gain if not used a lot.
 ```json
 "anti_spoilers": {
   "ignore_roles": [ROLE_ID, ROLE_ID, ...],
   "ignore_channels": [CHANNEL_ID, CHANNEL_ID, ...],
   "announce": CHANNEL_ID,
-  "warning": WARNINGS_BEFORE_MUTE
+  "warning": WARNINGS_BEFORE_MUTE,
+  "give_warning": true|false
 }
 ```
 
