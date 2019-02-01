@@ -249,6 +249,17 @@ This setting makes it so you can ban some words or links that you do not allow a
 }
 ```
 
+{% include settings-title.html text="anti_spoilers" %}
+Tired of people spamming spoilers in your server, get rid of people who spam it with this lovely setting. Never see a spoiler spam ever again.
+```json
+"anti_spoilers": {
+  "ignore_roles": [ROLE_ID, ROLE_ID, ...],
+  "ignore_channels": [CHANNEL_ID, CHANNEL_ID, ...],
+  "announce": CHANNEL_ID,
+  "warning": WARNINGS_BEFORE_MUTE
+}
+```
+
 {% include settings-title.html text="family_friendly" %}
 This will ensure that the chat stays friendly without swearing and everything. If you want to test the filter, try with the `/predict` command.
 You can also have the "only_detect" to not detect anything else, to ensure you have only what you need gone from your server detected by the bot, because if you allow profanity but not insult, then you can disable profanity filter, trust me, they are two different things.
