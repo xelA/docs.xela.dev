@@ -30,6 +30,7 @@ Have xelA give levels and being able to grant roles on getting a level that you 
 "levels": {
   "enabled": true|false,
   "announce": true|false,
+  "delete_on_leave": true|false,
   "announceMessage": "[USER (or) MENTION] has reached level **[LEVEL]**",
   "ignore_channels": [CHANNEL_ID, CHANNEL_ID, ...],
   "ignore_roles": [ROLE_ID, ROLE_ID, ...],
@@ -175,7 +176,6 @@ This will prevent people from posting **discord.gg** links in your discord serve
 ```json
 "antiads": {
   "announce": CHANNEL_ID,
-  "roles": ROLES_AMOUNT_TO_IGNORE,
   "ignore_roles": [ROLE_ID, ROLE_ID, ...],
   "ignore_channels": [CHANNEL_ID, CHANNEL_ID, ...],
   "usernamejoin": true|false,
