@@ -1,0 +1,32 @@
+---
+permalink: "/backgrounds"
+layout: default
+
+title: xelA Rank Backgrounds
+description: All backgrounds provided by xelA
+keywords: xelA, bot, discord, 24/7, hot
+favicon: assets/images/profile.png
+---
+<style>
+body { background: #252525; }
+</style>
+
+<h1 class="page-title center-text bold">Backgrounds:</h1>
+
+<section class="container" id="information">
+  <div class="flex-grid">
+    {% for background in site.data.backgrounds %}
+    <div class="col-xs bg-container">
+      <p class="center-text no-margin">{{ background }}</p>
+      <img draggable="false" src="{{ site.url }}/assets/images/level/{{ background }}.jpg" class="center">
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+  .page-title { margin: .5em 0; }
+  .container { max-width: 1400px; }
+  .bg-container { margin: .5em 0; }
+  img { width: 350px; }
+</style>

@@ -199,7 +199,8 @@ Anitcaps is a way for you to avoid people spamming **THINGS WITH EVERYTHING IN L
 ```json
 "anticaps": {
   "announce": CHANNEL_ID,
-  "roles": ROLES_AMOUNT_TO_IGNORE,
+  "ignore_roles": [ROLE_ID, ROLE_ID, ...],
+  "ignore_channels": [CHANNEL_ID, CHANNEL_ID, ...],
   "percent": 0.1 to 1.0,
   "length": CHARACTER_LENGTH_BEFORE_DETECT,
   "warning": WARNINGS_BEFORE_BAN
@@ -214,7 +215,8 @@ You can define how many lines is too much and how many roles a person can have t
 ```json
 "antinewline": {
   "announce": CHANNEL_ID,
-  "roles": ROLES_AMOUNT_TO_IGNORE,
+  "ignore_roles": [ROLE_ID, ROLE_ID, ...],
+  "ignore_channels": [CHANNEL_ID, CHANNEL_ID, ...],
   "lines": AMOUNT_OF_LINES_BEFORE_DELETE,
   "warning": WARNINGS_BEFORE_MUTE
 }
@@ -224,6 +226,7 @@ You can define how many lines is too much and how many roles a person can have t
 If you've ever wanted to have a channel where people can **only** post images and not chat in, then this will suit you quite well. You can define multiple channels it will check for images only and delete anyone trying to not follow such roles.
 ```json
 "images_only": {
+  "ignore_roles": [ROLE_ID, ROLE_ID, ...],
   "channels": [CHANNEL_ID, CHANNEL_ID, ...],
   "warning": WARNINGS_BEFORE_MUTE
 }
@@ -234,7 +237,8 @@ Disabling the `@everyone` is one thing, but preventing people from mentioning mu
 ```json
 "antimention": {
   "announce": CHANNEL_ID,
-  "roles": ROLES_AMOUNT_TO_IGNORE,
+  "ignore_roles": [ROLE_ID, ROLE_ID, ...],
+  "ignore_channels": [CHANNEL_ID, CHANNEL_ID, ...],
   "mentions": MENTION_LIMIT,
   "warning": WARNINGS_BEFORE_MUTE
 }
@@ -244,9 +248,11 @@ Disabling the `@everyone` is one thing, but preventing people from mentioning mu
 This setting makes it so you can ban some words or links that you do not allow at all in your server. This could be things like the N word and pornhub links if that's what you're into censoring (Not going to blame you for that).
 ```json
 "wordfilter": {
+  "announce": CHANNEL_ID,
+  "ignore_roles": [ROLE_ID, ROLE_ID, ...],
+  "ignore_channels": [CHANNEL_ID, CHANNEL_ID, ...],
   "words": ["MULTIPLE", "WORDS", "HERE"],
   "warning": WARNINGS_BEFORE_MUTE,
-  "announce": CHANNEL_ID
 }
 ```
 
@@ -254,9 +260,9 @@ This setting makes it so you can ban some words or links that you do not allow a
 Tired of people spamming spoilers in your server, get rid of people who spam it with this lovely setting. Never see a spoiler spam ever again. You can also give 0 warnings for using spoilers if it's just to ensure that people can't use it here, because it might be an unfair warning to gain if not used a lot.
 ```json
 "anti_spoilers": {
+  "announce": CHANNEL_ID,
   "ignore_roles": [ROLE_ID, ROLE_ID, ...],
   "ignore_channels": [CHANNEL_ID, CHANNEL_ID, ...],
-  "announce": CHANNEL_ID,
   "warning": WARNINGS_BEFORE_MUTE,
   "give_warning": true|false
 }
