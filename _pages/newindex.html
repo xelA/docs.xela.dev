@@ -1,0 +1,75 @@
+---
+permalink: "/rewrite"
+layout: default
+
+title: xelA
+description: A powerful bot for your discord server
+keywords: xelA, bot, discord, 24/7, hot
+favicon: assets/images/profile.png
+---
+
+<section class="fullscreen">
+  <div class="background" style="background-image: url('assets/images/background.gif');"></div>
+  <div class="center-object">
+    <section class="me unset">
+      <img draggable="false" src="assets/images/profile.png" class="image-title medium-border">
+      <div class="unset">
+        <h1 class="title">{{ page.title }}</h1>
+        <span class="undertitle">{{ page.description }}</span>
+      </div>
+    </section>
+    <div class="buttons">
+      <a href="https://discord.gg/DpxkY3x" class="btn animation discord" target="_blank">Discord</a>
+      <a id="trigger" class="btn animation emerald">Invite</a>
+      <a href="docs" class="btn animation sun-flower black-text">Docs</a>
+      <a href="https://twitter.com/AlexFlipnote" class="btn animation belize-hole" target="_blank">Twitter</a>
+      <a href="https://github.com/xelA/discord_bot.py" class="btn animation highlight" target="_blank">GitHub Source</a>
+    </div>
+  </div>
+  <div class="arrow bounce"></div>
+</section>
+
+<!-- Use later
+<video muted preload="true" loop autoplay style="height: 65vmin;width: auto;" id="demovideo">
+  <source src="assets/video/demo.mp4" type="video/mp4">
+  Your browser doesn't support video :(
+</video>
+-->
+
+<section class="container" id="information">
+  <h1 class="center"><i class="twa twa-spiral-notepad"></i> Testimonials:</h1>
+  <div class="card-container">
+    {% for member in site.data.testimonials %}
+    <div class="card">
+      <div class="avatar"><img draggable="false" src="{{ site.url }}/assets/images/testimonials/{{ member.avatar }}"></div>
+      <h1 class="title">{{ member.name }}</h1>
+      {% if member.url %}
+      <a href="{{ member.url }}" target="_blank"><p class="description link">{{ member.title }}</p></a>
+      {% else %}
+      <p class="description">{{ member.title }}</p>
+      {% endif %}
+      <div class="footer"><p style="text-align: left;">{{ member.text }}</p></div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Modal popout screen -->
+<div id="modal" class="modal modal--close">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>To invite <b>xelA</b> to your server, you will need a server which meets some of the requirements:</p>
+    <ul style="margin-left: 1em;">
+      <li>Active server</li>
+      <li>Non-abusive members (aka. people who will spam bots)</li>
+      <li>Over 1000 members (doesn't count bots)</li>
+      <li>Server with intention of growing</li>
+    </ul>
+    <br>
+    <span>
+      If you want to take further contact, visit my Discord server by clicking the <b>Discord</b> button
+      under this popout, then talk to me at <b>AlexFlipnote#0001</b><br>
+      Also remember, the settings are in JSON format, so I hope you have some experience with it.
+    </span>
+  </div>
+</div>

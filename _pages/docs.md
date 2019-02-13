@@ -167,7 +167,7 @@ This setting can be useful to make xelA give everyone who joins voice channels a
 Strict mode can be useful if you want to prevent people from making alts during a raid or just not accept early-made accounts overall to your Discord server by doing whatever action you've set it to do, either ban, kick or mute. Remember to have the word alone, nothing else, or else it won't work.
 ```json
 "strict_mode": {
-  "days": DAYS_IN_NUMBER (Mute anyone with an account made earlier than DAYS_IN_NUMBER),
+  "days": DAYS_IN_NUMBER,
   "action": "[BAN|KICK|MUTE]"
 }
 ```
