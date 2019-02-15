@@ -11,9 +11,19 @@ favicon: assets/images/profile.png
 body { background: #252525; }
 </style>
 
-<h1 class="page-title center-text bold">Backgrounds:</h1>
+
 
 <section class="container" id="information">
+  <div class="box-container highlight no-border-radius">
+    <p class="no-margin">
+      There are 2 ways you have have a background on xelA with the /customrank background command:
+      <br>- Backgrounds provided below
+      <br>- Any HEX value
+      <br><br>Simply type the name or HEX value to get what you need.
+    </p>
+  </div>
+
+  <h1 class="page-title center-text bold">Backgrounds:</h1>
   <div class="flex-grid">
     {% for background in site.data.backgrounds %}
     <div class="col-xs bg-container">
