@@ -1,4 +1,4 @@
-# xela.alexflipnote.xyz
+# xela.alexflipnote.dev
 The website for xelA
 
 ## Requirements
