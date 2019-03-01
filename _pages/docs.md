@@ -209,7 +209,7 @@ Anitcaps is a way for you to avoid people spamming **THINGS WITH EVERYTHING IN L
 
 {% include settings-title.html text="antinewline" %}
 Antinewline is to prevent people from spamming everything in a new line, this could be in copypasta, long texts that takes the entire discord and so on, an example would be:
-![](https://i.alexflipnote.xyz/157af2.png)
+![](https://i.alexflipnote.dev/157af2.png)
 
 You can define how many lines is too much and how many roles a person can have to bypass this.
 ```json
