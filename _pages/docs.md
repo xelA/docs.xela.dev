@@ -158,6 +158,7 @@ The mute object is the most important setting you will need to get every other s
 This setting can be useful to make xelA give everyone who joins voice channels a new role for a temporarily time, to access a new channel where people who don't have a microphone can chat in to not make any other channels get confused over why the spesific person types a lot for himself/herself.
 ```json
 "voice_text": {
+  "all_channels": true|false,
   "channels": [CHANNEL_ID, CHANNEL_ID, ...],
   "roleid": ROLE_ID
 }
