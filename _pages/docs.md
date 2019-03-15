@@ -26,11 +26,20 @@ You can add as many as you want inside the `custom` tag with an **Array** list. 
 
 {% include settings-title.html text="levels" %}
 Have xelA give levels and being able to grant roles on getting a level that you define. This can heavily boost your activity and make it rewarding to chat on your server. By default this setting is turned off to not annoy any of the users xelA is with, but you can simply enable it by adding the settings under here, even make it not announce level ups if that's your thing. You can also have the bot ignore channels like shitposting where people spam or roles for people who are punished, so they can't rank up anymore, up to you what you will do. If you don't want users to keep roles granted by levels that a under the newly rewarded one, you can disable it by adding `rewardStacking` to `false` and avoid such issue.
+
+`xp_adjustment` is based of three different levels of XP gain.
+- LOW: 5 - 13 XP
+- NORMAL: 7 - 15 XP
+- HIGH: 15 - 25 XP
+
+Changing to any of these will grant XP between the two different values but in the amount you wish for.
+By default, this is set to `NORMAL`
 ```json
 "levels": {
   "enabled": true|false,
   "announce": true|false,
   "delete_on_leave": true|false,
+  "xp_adjustment": "[LOW|NORMAL|HIGH]",
   "announceMessage": "[USER (or) MENTION] has reached level **[LEVEL]**",
   "ignore_channels": [CHANNEL_ID, CHANNEL_ID, ...],
   "ignore_roles": [ROLE_ID, ROLE_ID, ...],
