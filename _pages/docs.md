@@ -129,6 +129,12 @@ Automatically decancer people who have a horrible or unreadable names, keep in m
 "auto_decancer": true|false
 ```
 
+{% include settings-title.html text="disable_chatbot" %}
+If you don't like the chatbot when doing `@xelA` you can disable it completly on your server by adding this line to your settings.
+```json
+"disable_chatbot": true|false
+```
+
 {% include settings-title.html text="ignore_channels" %}
 Makes xelA ignore all commands in one channel.
 However, people with ban permissions bypass this rule and can continue to use commands in ignored channel.
