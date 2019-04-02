@@ -123,6 +123,16 @@ Automatically dehoists people who are trying to be on top of the member list.
 "auto_dehoist": true|false
 ```
 
+{% include settings-title.html text="warn_limit" %}
+The bot has the power to mute people for reaching a certain limit of warnings. Keep in mind that this only affects manual `/warn` command.
+The `mute_time` is based on the temporarily punishment system, where **2d** would be 2 days and so on.
+```json
+"warn_limit": {
+  "mute_time": "2h, 1w, 4d, basically same as temp punishment",
+  "warning": WARNINGS_BEFORE_MUTE
+}
+```
+
 {% include settings-title.html text="auto_decancer" %}
 Automatically decancer people who have a horrible or unreadable names, keep in mind that it's triggered with emojis too.
 ```json
