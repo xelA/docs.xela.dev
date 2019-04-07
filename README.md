@@ -1,5 +1,5 @@
-# xela.alexflipnote.dev
-The website for xelA
+# docs.xela.dev
+The docs website for xelA
 
 ## Requirements
 - Ruby 2.4 or above - https://rubyinstaller.org/downloads/
