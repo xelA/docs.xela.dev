@@ -1,5 +1,5 @@
 ---
-permalink: "/docs"
+permalink: "/"
 layout: docs
 
 title: xelA Settings Docs

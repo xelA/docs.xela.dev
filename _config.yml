@@ -5,9 +5,9 @@ title: xelA
 
 themecolour: "#2196F3"
 
-domain: "https://xela.alexflipnote.dev"
+domain: "https://docs.xela.dev"
 baseurl: ""
-url: "https://xela.alexflipnote.dev"
+url: "https://docs.xela.dev"
 encoding: utf-8
 
 include: ['_pages']
