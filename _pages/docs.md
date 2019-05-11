@@ -111,12 +111,6 @@ Let users choose if they want to see NSFW channels or not with a role you've set
 "nsfw": ROLE_ID
 ```
 
-{% include settings-title.html text="streaming" %}
-Give a user a role whenever they are streaming to promote them with a nice hoist maybe.
-```json
-"streaming": ROLE_ID
-```
-
 {% include settings-title.html text="saveroles" %}
 Keep a track on what roles a user had before they leave to then recover when they join back again.
 ```json
