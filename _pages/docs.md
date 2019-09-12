@@ -256,11 +256,12 @@ You can define how many lines is too much and how many roles a person can have t
 ```
 
 {% include settings-title.html text="images_only" %}
-If you've ever wanted to have a channel where people can **only** post images and not chat in, then this will suit you quite well. You can define multiple channels it will check for images only and delete anyone trying to not follow such roles.
+If you've ever wanted to have a channel where people can **only** post images and not chat in, then this will suit you quite well. You can define multiple channels it will check for images only and delete anyone trying to not follow such roles. If you do not desire to mute people but rather warn people for breaking the rules, you can add a `give_warning` with the value `false` and no one will be punished for it anymore.
 ```json
 "images_only": {
   "ignore_roles": [ROLE_ID, ROLE_ID, ...],
   "channels": [CHANNEL_ID, CHANNEL_ID, ...],
+  "give_warning": true|false,
   "warning": WARNINGS_BEFORE_MUTE
 }
 ```
