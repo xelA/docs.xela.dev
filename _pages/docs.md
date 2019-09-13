@@ -174,12 +174,13 @@ xelA is able to play music, as well as let you control the default settings it w
 ```
 
 {% include settings-title.html text="mute" %}
-The mute object is the most important setting you will need to get every other settings that use a muted role to work. You can as well define something called a "Jail Channel" which is basically a channel on Discord that only muted people can see and possible talk to appeal in. Autoban makes it so if muted people leaves the server, they will automatically be banned by the bot for attempting to avoid punishment or just not bothering to appeal at all, up to you for the reasoning tbf.
+The mute object is the most important setting you will need to get every other settings that use a muted role to work. You can as well define something called a "Jail Channel" which is basically a channel on Discord that only muted people can see and possible talk to appeal in. Autoban makes it so if muted people leaves the server, they will automatically be banned by the bot for attempting to avoid punishment or just not bothering to appeal at all, up to you for the reasoning tbf. If by any chance you want the automute to give temporarily punishment instead of a permanent, you can give it the `automute_time` config and set a time limit (recommended: 8h)
 ```json
 "mute": {
   "channel": CHANNEL_ID,
   "roleid": ROLE_ID,
   "autoban": true|false,
+  "automute_time": "2h, 1w, 4d, basically same as temp punishment",
   "jailchannel": CHANNEL_ID,
   "jailmessage": "MESSAGE"
 }
