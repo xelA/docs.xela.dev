@@ -124,9 +124,12 @@ Keep a track on what roles a user had before they leave to then recover when the
 ```
 
 {% include settings-title.html text="auto_dehoist" %}
-Automatically dehoists people who are trying to be on top of the member list.
+Automatically dehoists people who are trying to be on top of the member list. It has the ability to ignore bots as well in case you wish to do some special names for them.
 ```json
-"auto_dehoist": true|false
+"auto_dehoist": {
+  "enabled": true|false,
+  "ignore_bots": true|false
+}
 ```
 
 {% include settings-title.html text="warn_limit" %}
@@ -137,12 +140,6 @@ The `mute_time` is based on the temporarily punishment system, where **2d** woul
   "mute_time": "2h, 1w, 4d, basically same as temp punishment",
   "warning": WARNINGS_BEFORE_MUTE
 }
-```
-
-{% include settings-title.html text="auto_decancer" %}
-Automatically decancer people who have a horrible or unreadable names, keep in mind that it's triggered with emojis too.
-```json
-"auto_decancer": true|false
 ```
 
 {% include settings-title.html text="disable_chatbot" %}
