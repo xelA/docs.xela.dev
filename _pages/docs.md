@@ -105,12 +105,6 @@ Have the ability for users to report anything in the server and let the moderato
 "report": CHANNEL_ID
 ```
 
-{% include settings-title.html text="nsfw" %}
-Let users choose if they want to see NSFW channels or not with a role you've set up.
-```json
-"nsfw": ROLE_ID
-```
-
 {% include settings-title.html text="streaming" %}
 Give a user a role whenever they are streaming to promote them with a nice hoist maybe.
 ```json
