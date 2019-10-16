@@ -143,6 +143,16 @@ However, people with ban permissions bypass this rule and can continue to use co
 "ignore_channels": [CHANNEL_ID, CHANNEL_ID, ...]
 ```
 
+{% include settings-title.html text="disable_commands" %}
+Disable commands works in the same way as `ignore_channels`, however it adds the ability to disable only a few commands rather than everything at once. `commands` is where you put all commands you want to be disabled, it is case-sensitive so you have to type all commands in lowercase and the original name. If you type in aliases, it will simply let it through as that is not the original command name. (You can find all command names with /help). If you put `all_channels` to `true`, `channels` will then function as a whitelist for which channel still can access the commands. However if it's set to `false`, then `channels` is basically which channels are not allowed to use the commands (blacklist).
+```json
+"disable_commands": {
+  "all_channels": true|false,
+  "commands": ["COMMAND", "COMMAND2", ...],
+  "channels": [CHANNEL_ID, CHANNEL_ID, ...]
+}
+```
+
 {% include settings-title.html text="toggleroles" %}
 Gives people the ability to give themselves a role, a perfect solution for users who've read the rules and accept by giving themselves a role to view all channels. The roleme command is toggable, so you can use this as well for people who want to subscribe to announcements/events and then letting them unsubscribe later in time.
 ```json
