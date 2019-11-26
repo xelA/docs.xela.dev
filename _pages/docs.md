@@ -63,6 +63,12 @@ This will simply display who got unbanned for whatever reason.
 "unban": CHANNEL_ID
 ```
 
+{% include settings-title.html text="warn" %}
+This will simply display who got warned for whatever reason.
+```json
+"warn": CHANNEL_ID
+```
+
 {% include settings-title.html text="kick" %}
 This will simply display who got kicked for whatever reason.
 ```json
