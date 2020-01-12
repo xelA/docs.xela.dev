@@ -105,6 +105,12 @@ Dumps a large text file whenever you `/prune` any channel on the server.
 "bulkdelete": CHANNEL_ID
 ```
 
+{% include settings-title.html text="emoji" %}
+Shows emojis that are added/deleted/updated in a pretty embed log.
+```json
+"emoji": CHANNEL_ID
+```
+
 {% include settings-title.html text="report" %}
 Have the ability for users to report anything in the server and let the moderators know anything.
 ```json
